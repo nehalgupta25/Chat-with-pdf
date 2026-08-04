@@ -7,3 +7,5 @@ pypdf
 python-dotenv
 streamlit
 streamlit-pdf
+numpy
+torchvision

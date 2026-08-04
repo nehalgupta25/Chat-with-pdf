@@ -36,7 +36,7 @@ if uploaded_file:
   with st.spinner("Reading PDF File"):
     data = uploaded_file.read()
     st.sidebar.pdf(data)
-
+save_dir=""
 if uploaded_file is not None:
     save_dir = "pdf_files"
     if not os.path.exists(save_dir):

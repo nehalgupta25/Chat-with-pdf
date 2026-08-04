@@ -42,10 +42,10 @@ if uploaded_file is not None:
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
       
-    file_path = os.path.join(save_dir, uploaded_file.name)
-    with open(file_path, "wb") as f:
-        f.write(uploaded_file.getbuffer())
-    st.write(file_path)
+file_path = os.path.join(save_dir, uploaded_file.name)
+with open(file_path, "wb") as f:
+    f.write(uploaded_file.getbuffer())
+st.write(file_path)
 
 # =====================STEP 4: LOAD RESOURCES======================
 @st.cache_data

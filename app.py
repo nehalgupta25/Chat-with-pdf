@@ -55,7 +55,7 @@ def load_documents():
   return documents
 
 # st.cache_data: to load data only one time
-# st.cache_resource : to load resource only one time
+# st.cache_resource: to load resource only one time
 
 @st.cache_resource
 def load_embedding():
